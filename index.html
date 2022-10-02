@@ -9,10 +9,11 @@
 <script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.js"></script>
 
-<!-- the viewer container must have a defined size -->
-<div id="viewer" style="width: 50vw; height: 100vh;"></div>
-<div id="viewer2" style="width: 50vw; height: 100vh;"></div>
-
+<div style="display: flex; flex-direction: row;"
+  <!-- the viewer container must have a defined size -->
+  <div id="viewer" style="width: 50vw; height: 100vh;"></div>
+  <div id="viewer2" style="width: 50vw; height: 100vh;"></div>
+</div>
 <script>
   const viewer = new PhotoSphereViewer.Viewer({
     container: document.querySelector('#viewer'),
